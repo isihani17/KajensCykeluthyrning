@@ -1,0 +1,11 @@
+## Förbättringsförslag – Spara data i en databas
+
+En förbättring jag skulle vilja göra är att spara kunder, fordon och uthyrningar i en databas, till exempel SQLite.
+
+Just nu sparas informationen i listor i programmets minne. Det betyder att informationen försvinner när programmet stängs av.
+
+Med en databas kan informationen sparas och finnas kvar nästa gång programmet startas. Det skulle göra programmet mer användbart och minska risken att information går förlorad.
+
+För att implementera förbättringen skulle jag skapa tabeller för kunder, fordon och uthyrningar. Programmet skulle läsa in informationen från databasen vid start och spara ändringar när en kund registreras eller ett fordon hyrs ut eller lämnas tillbaka.
+
+Jag har inte implementerat den här förbättringen, men jag tycker att den skulle göra programmet säkrare och mer praktiskt att använda.

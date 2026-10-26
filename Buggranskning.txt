@@ -1,0 +1,11 @@
+## Buggranskning – Fel vid registrering av kund
+
+När jag testade programmet upptäckte jag ett fel vid registrering av en ny kund. Jag skrev `abc` i stället för en ålder, men programmet registrerade ändå kunden.
+
+Felet berodde på att programmet inte kontrollerade att inmatningen var en giltig ålder innan kunden registrerades.
+
+Jag löste problemet genom att skapa metoden `ReadAge()`, som kontrollerar att användaren anger ett giltigt, icke-negativt heltal. Om inmatningen är felaktig får användaren försöka igen.
+
+Efter ändringen testade jag att skriva `abc` vid åldersfrågan. Programmet visade då meddelandet ”Ange en giltig ålder.” och bad om åldern igen. När jag skrev `39` kunde kunden registreras korrekt.
+
+Testet visade att felet var åtgärdat.
